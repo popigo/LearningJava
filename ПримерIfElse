@@ -1,0 +1,6 @@
+if (а > b){ 
+    max = a;
+}
+else {
+    max = b;
+}
