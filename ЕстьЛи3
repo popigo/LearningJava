@@ -1,0 +1,20 @@
+import java.io.PrintStream;
+import java.util.Scanner;
+ 
+public class MyProgram {
+
+ 
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int x1, x2; // объявление переменных х1 и x2
+        x1 = in.nextInt(); // считывание данных в х1
+        x2 = x1 % 10; // вторая цифра
+        x1 = x1 / 10; // первая цифра
+        if (x2 == 3 || x1 == 3) {
+            System.out.println("В числе присутствует цифра 3");
+        } else {
+            System.out.println("В числе нет цифры 3");
+        }
+        System.out.println(x1 + "; " + x2);
+    }
+}
